@@ -1,0 +1,29 @@
+# Application
+app/plugins/*
+!app/plugins/.gitkeep
+app/mu-plugins/*/
+app/upgrade
+uploads/*
+!uploads/.gitkeep
+
+# WordPress
+wp
+.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+/app/mu-plugins/xeader-plugin/
+/app/languages/
+/app/upgrade/
+/app/themes/**/assets/
