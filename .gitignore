@@ -26,4 +26,5 @@ wp-cli.local.yml
 /app/mu-plugins/xeader-plugin/
 /app/languages/
 /app/upgrade/
+/app/themes/lumberjack-theme/
 /app/themes/**/assets/

@@ -28,27 +28,44 @@ based on [Bedrock](https://roots.io/bedrock) by [Roots](https://roots.io), made 
 
 ## Frontend / Theme
 
-*Compile frontend code to /frontend/public*  
-```bash
-yarn build
+[Lumberjack theme](https://github.com/xeader/lumberjack-theme), a WordPress theme using _s (underscores) xeader/itcss and xeader/blendid-plus, is now included in lumberjack
+
+###Setup
+To use `wordpress-hot` command change the Gulp command in the file `app/themes/lumberjack-theme/frontend/config/task-config.js`
+```js
+...
+      gulp.task("wordpress-hot", function(done) {
+        PATH_CONFIG.dest = "./../assets";
+        TASK_CONFIG.browserSync = {
+          proxy: "xeader.lumberjack", // <--- ********* HERE ********
+          files: ["./src/**/*"]
+        };
+        TASK_CONFIG.javascripts.publicPath =
+          "/app/themes/lumberjack-theme/assets/javascripts"; // <--- ********* HERE ********
+...
 ```
 
-*Run a PHP server to /frontend/public*
+*Compile frontend code to `/frontend/public`*  
 ```bash
-yarn serve
+yarn build // or npm run build
+```
+
+*Run a PHP server to `/frontend/public`*
+```bash
+yarn serve // or npm run serve
 ```
 
 *Build frontend project and watch for changes*
 ```bash
-yarn watch
+yarn watch // or npm run watch
 ```
 
 *Builds frontend project (and watch for changes) serving the Wordpress application*
 ```bash
-yarn wordpress-hot
+yarn wordpress-hot // or npm run wordpress-hot
 ```
 
-*Builds frontend project and deploy to Wordpress assets folder*
+*Builds frontend project and deploy to Wordpress `assets` folder*
 ```bash
-yarn wordpress
+yarn wordpress // or npm run wordpress
 ```

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7f955b21721df82d8e7eb77e05b77aa",
+    "content-hash": "afe3dad2270fdfd598bae64f0b820406",
     "packages": [
         {
             "name": "composer/installers",
@@ -487,6 +487,64 @@
                 "environment"
             ],
             "time": "2020-07-14T17:54:18+00:00"
+        },
+        {
+            "name": "xeader/lumberjack-theme",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xeader/lumberjack-theme.git",
+                "reference": "67b643fe8b2610bebbba5c0c1b57a8d4ed42d836"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xeader/lumberjack-theme/zipball/67b643fe8b2610bebbba5c0c1b57a8d4ed42d836",
+                "reference": "67b643fe8b2610bebbba5c0c1b57a8d4ed42d836",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2.0",
+                "wp-cli/i18n-command": "^2.2.5",
+                "wptrt/wpthemereview": "^0.2.1"
+            },
+            "type": "wordpress-theme",
+            "scripts": {
+                "lint:wpcs": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs"
+                ],
+                "lint:php": [
+                    "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+                ],
+                "make-pot": [
+                    "wp i18n make-pot . languages/_s.pot"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Gatta",
+                    "homepage": "https://www.xeader.com",
+                    "email": "a.gatta@xeader.com"
+                }
+            ],
+            "description": "A Lumberjack theme using _s (underscores) xeader/itcss and xeader/blendid-plus",
+            "homepage": "https://github.com/xeader/lumberjack-theme",
+            "keywords": [
+                "Lumberjack",
+                "Themes",
+                "WordPress"
+            ],
+            "support": {
+                "source": "https://github.com/xeader/lumberjack-theme/tree/1.0.0",
+                "issues": "https://github.com/xeader/lumberjack-theme/issues"
+            },
+            "time": "2020-10-14T19:33:10+00:00"
         },
         {
             "name": "xeader/xeader-plugin",

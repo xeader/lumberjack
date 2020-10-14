@@ -4,7 +4,7 @@
   "license": "MIT",
   "description": "A Wordpress boilerplate with modern development tools, easier configuration, and an improved folder structure based on Bedrock by Roots, made by Xeader",
   "homepage": "https://github.com/xeader/lumberjack",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Antonio Gatta",
@@ -33,6 +33,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/xeader/wp-xeader-plugin"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/xeader/lumberjack-theme"
     }
   ],
   "require": {
@@ -47,7 +51,8 @@
     "roots/wordpress": "5.4.2",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "xeader/xeader-plugin": "^1.0"
+    "xeader/xeader-plugin": "^1.0",
+    "xeader/lumberjack-theme": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.4",
