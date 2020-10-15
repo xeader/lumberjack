@@ -4,7 +4,7 @@
   "license": "MIT",
   "description": "A Wordpress boilerplate with modern development tools, easier configuration, and an improved folder structure based on Bedrock by Roots, made by Xeader",
   "homepage": "https://github.com/xeader/lumberjack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "Antonio Gatta",
